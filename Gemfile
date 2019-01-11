@@ -10,7 +10,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.3'
 gem 'coffee-rails', '~> 4.2'
 gem 'data_migrate'
-# gem 'devise'
+gem 'devise'
 gem 'jbuilder', '~> 2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'

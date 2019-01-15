@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_15_135704) do
+ActiveRecord::Schema.define(version: 2019_01_15_144854) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,17 @@ ActiveRecord::Schema.define(version: 2019_01_15_135704) do
     t.index ["reset_password_token"], name: "index_leaders_on_reset_password_token", unique: true
   end
 
+  create_table "scorings", force: :cascade do |t|
+    t.integer "amount"
+    t.bigint "task_id"
+    t.string "scoreable_type"
+    t.bigint "scoreable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["scoreable_type", "scoreable_id"], name: "index_scorings_on_scoreable_type_and_scoreable_id"
+    t.index ["task_id"], name: "index_scorings_on_task_id"
+  end
+
   create_table "tasks", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -63,5 +74,6 @@ ActiveRecord::Schema.define(version: 2019_01_15_135704) do
 
   add_foreign_key "contestants", "teams"
   add_foreign_key "contestants", "terms"
+  add_foreign_key "scorings", "tasks"
   add_foreign_key "teams", "terms"
 end

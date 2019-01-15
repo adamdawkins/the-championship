@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1><%= @team.name %>: <%= @team.score %> points</h1>
+  <h2>Members: </h2>
+  <ul class="list-group">
+    <% @team.contestants.each do |contestant| %>
+      <li class="list-group-item"><%= contestant.name %></li>
+    <% end %>
+  </ul>
+</div>

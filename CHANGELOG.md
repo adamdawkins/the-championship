@@ -1,3 +1,12 @@
+## [Version 1.1.1](https://github.com/adamdawkins/the-championship/tree/v1.1.1) (2019-1-15)
+
+### Bug fixes
+
+- 🐞 Fix: all team assignments going to first contestant: [`0f5043e`](https://github.com/adamdawkins/the-championship/commit/0f5043e)
+- ♻️  Order the contestants page alphabetically: [`e9465d2`](https://github.com/adamdawkins/the-championship/commit/e9465d2)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.1.0...v1.1.1)
+
 ## [Version 1.1.0](https://github.com/adamdawkins/the-championship/tree/v1.1.0) (2019-1-15)
 
 ### New features

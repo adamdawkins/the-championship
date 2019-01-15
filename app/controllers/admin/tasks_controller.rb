@@ -10,6 +10,9 @@ class Admin::TasksController < AdminsController
   end
 
   def show
+    @scorings = Team.all.each.collect do |team|
+      team.scorings.where(task_id: @task.id).first || @task.scorings.build(scoreable: team)
+    end
   end
 
   def create

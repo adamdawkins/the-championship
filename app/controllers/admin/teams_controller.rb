@@ -21,7 +21,7 @@ class Admin::TeamsController < ApplicationController
 
     respond_to do |format|
       if @team.save
-        format.html { redirect_to admin_team_path(@team), notice: 'Team was successfully created.' }
+        format.html { redirect_to admin_teams_path, notice: 'Team was successfully created.' }
       else
         format.html { render :new }
       end

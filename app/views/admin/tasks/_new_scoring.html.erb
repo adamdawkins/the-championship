@@ -1,0 +1,12 @@
+<div class="card mb-4 p-3">
+  <% if scoring.persisted? %>
+    <h3><%= scoring.scoreable.name %>: <%= scoring.amount %></h3>
+  <% else %>
+    <%= simple_form_for(scoring, url: admin_task_scorings_path([scoring.task, scoring])) do |f| %>
+      <%= f.input :scoreable_id, as: :hidden %>
+      <%= f.input :scoreable_type, as: :hidden %>
+      <%= f.input :amount, label: scoring.scoreable.name, placeholder: "points" %>
+      <%= f.button :submit, "Award points" %>
+    <% end %>
+  <% end %>
+</div>

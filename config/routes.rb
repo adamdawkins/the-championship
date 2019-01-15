@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :contestants
     resources :teams
-    resources :tasks
+    resources :tasks do
+      resources :scorings, only: [:create, :destroy]
+    end
     put "/tasks/:id/start", to: "tasks#start", as: :start_task
     put "/tasks/:id/stop", to: "tasks#stop", as: :stop_task
   end

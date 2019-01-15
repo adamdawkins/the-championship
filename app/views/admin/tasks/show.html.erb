@@ -7,3 +7,7 @@
   <%= link_to "Start Task", admin_start_task_path(@task), method: :put, class: "btn btn-success" %>
 <% end %>
 
+<hr>
+<div class="">
+  <%= render partial: "new_scoring", collection: @scorings, as: :scoring %>
+</div>

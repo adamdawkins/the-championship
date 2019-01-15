@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_15_130928) do
+ActiveRecord::Schema.define(version: 2019_01_15_134630) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2019_01_15_130928) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "term_id"
+    t.bigint "team_id"
+    t.index ["team_id"], name: "index_contestants_on_team_id"
     t.index ["term_id"], name: "index_contestants_on_term_id"
   end
 
@@ -50,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_01_15_130928) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "contestants", "teams"
   add_foreign_key "contestants", "terms"
   add_foreign_key "teams", "terms"
 end

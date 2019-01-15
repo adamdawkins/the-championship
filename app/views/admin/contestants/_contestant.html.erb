@@ -1,1 +1,8 @@
-<li class="list-group-item"><%= contestant.name %></li>
+<li class="list-group-item">
+  <%= simple_form_for(contestant, url: admin_contestant_path(contestant), method: :put, remote: true) do |f| %>
+    <h3><%= contestant.name %></h3>
+    <%= f.input :team_id, collection: Team.all  %>
+    <%= f.submit "Save" %>
+  <% end %>
+
+</li>

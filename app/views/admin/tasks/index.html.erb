@@ -2,6 +2,6 @@
 <%= link_to "Add Task", new_admin_task_path %>
 <ul class="list-group">
   <% @tasks.each do |task| %>
-    <li class="list-group-item"><%= task.name %></li>
+    <li class="list-group-item"><%= link_to task.name, admin_task_path(task) %></li>
   <% end %>
 </ul>

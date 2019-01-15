@@ -1,3 +1,11 @@
+## [Version 1.0.1](https://github.com/adamdawkins/the-championship/tree/v1.0.1) (2019-1-15)
+
+### Bug fixes
+
+- 🚀 Use Bundler 1.15 to comply with Heroku: [`8e81605`](https://github.com/adamdawkins/the-championship/commit/8e81605)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.0.0...v1.0.1)
+
 ## [Version 1.0.0](https://github.com/adamdawkins/the-championship/tree/v1.0.0) (2019-1-15)
 
 ### New features

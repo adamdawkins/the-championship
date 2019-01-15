@@ -12,6 +12,10 @@ class Admin::ContestantsController < AdminsController
     end
   end
 
+  def index
+    @contestants = Contestant.all
+  end
+
   private
 
     def contestant_params

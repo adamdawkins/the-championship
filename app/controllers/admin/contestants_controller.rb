@@ -25,7 +25,7 @@ class Admin::ContestantsController < AdminsController
   end
 
   def index
-    @contestants = Contestant.all
+    @contestants = Contestant.all.order(name: :asc)
   end
 
   private

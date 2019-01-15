@@ -1,0 +1,8 @@
+<div style="display: flex; background: red; height: 100%;">
+<% @teams.each do |team| %>
+  <div class="team" style="flex: <%= team.score %>; background: <%= team.id % 2 > 0 ? '#043d66' : '#2c7bb4' %>; justify-content: center; align-items: center; display: flex; flex-flow: column; color: white;">
+    <h1><%= team.name %></h1>
+    <h3><%= team.score %> points</h2>
+  </div>
+<% end %>
+</div>

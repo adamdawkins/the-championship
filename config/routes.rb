@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    resources :teams
-  end
   devise_for :leaders, only: [ :sessions, :passwords ]
+
+  resources :teams, only: [:index, :show]
   
   namespace :admin do
     resources :contestants

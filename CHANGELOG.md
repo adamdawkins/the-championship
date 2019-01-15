@@ -1,3 +1,12 @@
+## [Version 1.1.5](https://github.com/adamdawkins/the-championship/tree/v1.1.5) (2019-1-15)
+
+### Bug fixes
+
+- 🐞 Remove bad links from admin team page: [`fb0d147`](https://github.com/adamdawkins/the-championship/commit/fb0d147)
+- 🐞 Require amount, and do not let it be null on Scorings: [`4f2eba0`](https://github.com/adamdawkins/the-championship/commit/4f2eba0)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.1.4...v1.1.5)
+
 ## [Version 1.1.4](https://github.com/adamdawkins/the-championship/tree/v1.1.4) (2019-1-15)
 
 ### Bug fixes

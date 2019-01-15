@@ -1,3 +1,11 @@
+## [Version 1.1.3](https://github.com/adamdawkins/the-championship/tree/v1.1.3) (2019-1-15)
+
+### Bug fixes
+
+- ♻️ Styling tweak: [`a61c413`](https://github.com/adamdawkins/the-championship/commit/a61c413)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.1.2...v1.1.3)
+
 ## [Version 1.1.2](https://github.com/adamdawkins/the-championship/tree/v1.1.2) (2019-1-15)
 
 ### Bug fixes

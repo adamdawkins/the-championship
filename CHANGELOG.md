@@ -1,3 +1,11 @@
+## [Version 1.1.4](https://github.com/adamdawkins/the-championship/tree/v1.1.4) (2019-1-15)
+
+### Bug fixes
+
+- ♻️  Change default background color on teams page: [`bfd0e51`](https://github.com/adamdawkins/the-championship/commit/bfd0e51)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.1.3...v1.1.4)
+
 ## [Version 1.1.3](https://github.com/adamdawkins/the-championship/tree/v1.1.3) (2019-1-15)
 
 ### Bug fixes

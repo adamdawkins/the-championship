@@ -1,19 +1,21 @@
-<% if @live_task.present? %>
-  <div class="mt-5 jumbotron">
-    <h1 class="display-4">
-      <span class="text-danger">
-        <span class="live-tag">
-          <%= fa_icon "circle" %>
+<div style="background-image: url('<%= asset_url "background.jpg" %>'); height: 100vh; width: 100vw; background-size: cover;">
+  <% if @live_task.present? %>
+    <div class="mt-5 jumbotron">
+      <h1 class="display-4">
+        <span class="text-danger">
+          <span class="live-tag">
+            <%= fa_icon "circle" %>
+          </span>
+          Live
         </span>
-        Live
-      </span>
-      <%= @live_task.name %>
-    </h1>
-    <p class="lead"><%= @live_task.description %></p>
-  </div>
-<% else %>
-  <div class="mt-5 jumbotron">
-    <h1 class="display-4">Welcome to the Championship</h1>
-    <%= link_to "Leaderboard", teams_path, class: "btn btn-primary" %>
-  </div>
-<% end %>
+        <%= @live_task.name %>
+      </h1>
+      <p class="lead"><%= @live_task.description %></p>
+    </div>
+  <% else %>
+    <div class="mt-5 jumbotron text-center" style="background: transparent">
+      <h1 class="display-4">Welcome to the Championship</h1>
+      <%= link_to "Leaderboard", teams_path, class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

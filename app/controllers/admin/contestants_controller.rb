@@ -35,7 +35,7 @@ class Admin::ContestantsController < AdminsController
     end
 
     def set_contestant
-      @contestant = Contestant.first
+      @contestant = Contestant.find(params[:id])
     end
 
     def contestant_params

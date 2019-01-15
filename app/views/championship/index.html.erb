@@ -1,0 +1,18 @@
+<% if @live_task.present? %>
+  <div class="jumbotron">
+    <h1 class="display-4">
+      <span class="text-danger">
+        <span class="live-tag">
+          <%= fa_icon "circle" %>
+        </span>
+        Live
+      </span>
+      <%= @live_task.name %>
+    </h1>
+    <p class="lead"><%= @live_task.description %></p>
+  </div>
+<% else %>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the Championship</h1>
+  </div>
+<% end %>

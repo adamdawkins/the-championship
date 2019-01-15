@@ -1,0 +1,9 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.description %></p>
+
+<% if @task.is_live? %>
+  <%= link_to "Stop Task", admin_stop_task_path(@task), method: :put, class: "btn btn-danger" %>
+<% else %>
+  <%= link_to "Start Task", admin_start_task_path(@task), method: :put, class: "btn btn-success" %>
+<% end %>
+

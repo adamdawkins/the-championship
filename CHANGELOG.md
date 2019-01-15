@@ -1,3 +1,12 @@
+## [Version 1.1.2](https://github.com/adamdawkins/the-championship/tree/v1.1.2) (2019-1-15)
+
+### Bug fixes
+
+- 🐞 Be able to link to tasks: [`5893545`](https://github.com/adamdawkins/the-championship/commit/5893545)
+- ♻️ Improve homepage styling: [`b2320e9`](https://github.com/adamdawkins/the-championship/commit/b2320e9)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.1.1...v1.1.2)
+
 ## [Version 1.1.1](https://github.com/adamdawkins/the-championship/tree/v1.1.1) (2019-1-15)
 
 ### Bug fixes

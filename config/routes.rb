@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     put "/tasks/:id/stop", to: "tasks#stop", as: :stop_task
   end
 
-  get "admin", to: "admin/teams#new"
+  get "admin", to: "admin/tasks#index"
 
   root to: "championship#index"
 end

@@ -1,3 +1,16 @@
+## [Version 1.1.0](https://github.com/adamdawkins/the-championship/tree/v1.1.0) (2019-1-15)
+
+### New features
+
+- ✅ Add admin navbar: [`965ac39`](https://github.com/adamdawkins/the-championship/commit/965ac39)
+
+### Bug fixes
+
+- ♻️  Route admin to tasks index: [`d88dc1e`](https://github.com/adamdawkins/the-championship/commit/d88dc1e)
+- 🐞 And mobile viewport meta-tags: [`3ab4a26`](https://github.com/adamdawkins/the-championship/commit/3ab4a26)
+
+[...full changes](https://github.com/adamdawkins/the-championship/compare/v1.0.1...v1.1.0)
+
 ## [Version 1.0.1](https://github.com/adamdawkins/the-championship/tree/v1.0.1) (2019-1-15)
 
 ### Bug fixes

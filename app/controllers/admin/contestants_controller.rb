@@ -1,10 +1,11 @@
 class Admin::ContestantsController < AdminsController
+  before_action :set_term, except: :index
   def new
     @contestant = Contestant.new
   end
 
   def create
-    @contestant = Contestant.new(contestant_params)
+    @contestant = @term.contestants.build(contestant_params)
     if @contestant.save
       redirect_to admin_contestants_path
     else
@@ -17,6 +18,10 @@ class Admin::ContestantsController < AdminsController
   end
 
   private
+
+    def set_term
+      @term = Term.first
+    end
 
     def contestant_params
       params.require(:contestant).permit(:name)

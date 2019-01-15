@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_11_230714) do
+ActiveRecord::Schema.define(version: 2019_01_15_130928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2019_01_11_230714) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "term_id"
+    t.index ["term_id"], name: "index_contestants_on_term_id"
   end
 
   create_table "leaders", force: :cascade do |t|
@@ -34,4 +36,20 @@ ActiveRecord::Schema.define(version: 2019_01_11_230714) do
     t.index ["reset_password_token"], name: "index_leaders_on_reset_password_token", unique: true
   end
 
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
+    t.bigint "term_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["term_id"], name: "index_teams_on_term_id"
+  end
+
+  create_table "terms", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "contestants", "terms"
+  add_foreign_key "teams", "terms"
 end
